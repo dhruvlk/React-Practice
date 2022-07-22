@@ -1,17 +1,17 @@
 import React, { Component } from 'react'
 import AllBtn from './Components/AllBtn'
-import Main1 from './Components/Main1'
-import Main2 from './Components/Main2'
-import Main3 from './Components/Main3'
-import Main4 from './Components/Main4'
-import Main5 from './Components/Main5'
-import Main6 from './Components/Main6'
-import Main7 from './Components/Main7'
-import Main8 from './Components/Main8'
+// import Main1 from './Components/Main1'
+// import Main2 from './Components/Main2'
+// import Main3 from './Components/Main3'
+// import Main4 from './Components/Main4'
+// import Main5 from './Components/Main5'
+// import Main6 from './Components/Main6'
+// import Main7 from './Components/Main7'
+// import Main8 from './Components/Main8'
 
 class App extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {}
   }
   render() {
@@ -21,11 +21,14 @@ class App extends Component {
           <h1>React Practice</h1>
         </center>
 
+        <div>
+          <AllBtn />
+        </div>
         {/* <div>
           <Main1 name={'Dhruv'} age={22} />
-        </div>
+        </div> */}
 
-        <div>
+        {/* <div>
           <Main2 />
         </div>
 
@@ -53,10 +56,6 @@ class App extends Component {
         <div>
           <Main8 />
         </div> */}
-
-        <div>
-          <AllBtn />
-        </div>
       </>
     )
   }

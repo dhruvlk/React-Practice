@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './Style.css'
 // import { render } from 'react-dom'
 import Main1 from './Main1'
 import Main2 from './Main2'
@@ -14,8 +15,8 @@ import Main8 from './Main8'
 // import Demo3 from './Demo3'
 
 class AllBtn extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
       name: 'React',
       showHideDemo1: false,
@@ -75,7 +76,64 @@ class AllBtn extends Component {
     } = this.state
     return (
       <div>
-        {showHideDemo1 && <Main1 />}
+        <div style={{ textAlign: 'center' }}>
+          <button
+            className='BtnStyle'
+            onClick={() => this.hideComponent('showHideDemo1')}
+          >
+            Task 1
+          </button>
+          &nbsp;&nbsp;
+          <button
+            className='BtnStyle'
+            onClick={() => this.hideComponent('showHideDemo2')}
+          >
+            Task 2
+          </button>
+          &nbsp;&nbsp;
+          <button
+            className='BtnStyle'
+            onClick={() => this.hideComponent('showHideDemo3')}
+          >
+            Task 3
+          </button>
+          &nbsp;&nbsp;
+          <button
+            className='BtnStyle'
+            onClick={() => this.hideComponent('showHideDemo4')}
+          >
+            Task 4
+          </button>
+          &nbsp;&nbsp;
+          <button
+            className='BtnStyle'
+            onClick={() => this.hideComponent('showHideDemo5')}
+          >
+            Task 5
+          </button>
+          &nbsp;&nbsp;
+          <button
+            className='BtnStyle'
+            onClick={() => this.hideComponent('showHideDemo6')}
+          >
+            Task 6
+          </button>
+          &nbsp;&nbsp;
+          <button
+            className='BtnStyle'
+            onClick={() => this.hideComponent('showHideDemo7')}
+          >
+            Task 7
+          </button>
+          &nbsp;&nbsp;
+          <button
+            className='BtnStyle'
+            onClick={() => this.hideComponent('showHideDemo8')}
+          >
+            Task 8
+          </button>
+        </div>
+        {showHideDemo1 && <Main1 name={'Dhruv'} age={22} />}
         {showHideDemo2 && <Main2 />}
         {showHideDemo3 && <Main3 />}
         {showHideDemo4 && <Main4 />}
@@ -83,40 +141,6 @@ class AllBtn extends Component {
         {showHideDemo6 && <Main6 />}
         {showHideDemo7 && <Main7 />}
         {showHideDemo8 && <Main8 />}
-
-        <div>
-          <button onClick={() => this.hideComponent('showHideDemo1')}>
-            Task 1
-          </button>
-          &nbsp;&nbsp;
-          <button onClick={() => this.hideComponent('showHideDemo2')}>
-            Task 2
-          </button>
-          &nbsp;&nbsp;
-          <button onClick={() => this.hideComponent('showHideDemo3')}>
-            Task 3
-          </button>
-          &nbsp;&nbsp;
-          <button onClick={() => this.hideComponent('showHideDemo4')}>
-            Task 4
-          </button>
-          &nbsp;&nbsp;
-          <button onClick={() => this.hideComponent('showHideDemo5')}>
-            Task 5
-          </button>
-          &nbsp;&nbsp;
-          <button onClick={() => this.hideComponent('showHideDemo6')}>
-            Task 6
-          </button>
-          &nbsp;&nbsp;
-          <button onClick={() => this.hideComponent('showHideDemo7')}>
-            Task 7
-          </button>
-          &nbsp;&nbsp;
-          <button onClick={() => this.hideComponent('showHideDemo8')}>
-            Task 8
-          </button>
-        </div>
       </div>
     )
   }
