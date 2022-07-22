@@ -135,7 +135,7 @@ class AllBtn extends Component {
         </div>
         {showHideDemo1 && <Main1 name={'Dhruv'} age={22} />}
         {showHideDemo2 && <Main2 />}
-        {showHideDemo3 && <Main3 />}
+        {showHideDemo3 && <Main3 isLoggedIn={false} />}
         {showHideDemo4 && <Main4 />}
         {showHideDemo5 && <Main5 />}
         {showHideDemo6 && <Main6 />}

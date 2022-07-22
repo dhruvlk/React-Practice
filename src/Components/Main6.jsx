@@ -24,16 +24,16 @@ class Main6 extends Component {
   changeState() {
     this.setState({ hello: 'All!!- Its a great reactjs tutorial.' })
   }
-  componentWillReceiveProps(newProps) {
+  componentWillReceiveProps() {
     console.log('Component Will Recieve Props!')
   }
-  shouldComponentUpdate(newProps, newState) {
+  shouldComponentUpdate() {
     return true
   }
-  componentWillUpdate(nextProps, nextState) {
+  componentWillUpdate() {
     console.log('Component Will UPDATE!')
   }
-  componentDidUpdate(prevProps, prevState) {
+  componentDidUpdate() {
     console.log('Component Did UPDATE!')
   }
   componentWillUnmount() {
